@@ -1,0 +1,26 @@
+{
+  "name": "modulo2-projeto3",
+  "version": "1.0.0",
+  "description": "Projeto",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobervanSouza/Modulo2-Projeto3.git"
+  },
+  "author": "Robervan Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobervanSouza/Modulo2-Projeto3/issues"
+  },
+  "homepage": "https://github.com/RobervanSouza/Modulo2-Projeto3#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
