@@ -10,7 +10,7 @@
 </head>
 <body>
   
-    <nav> <!--   -->
+    <nav class="nav">  <!--   -->
        <ul> <!--   -->
        
            <li><a href="/"><h1><h1>Perola Negra Convites</h1></h1></a> </li><!--o h1 e melhor para pesquisa do google-->
@@ -66,14 +66,14 @@
         
                     </form>
                      
-                    <% } else { %><!-- ESSA CONDIÇÃO E QUANDO CLICAR EM EDITAR AI MOSTRA A PAGINA DE ATUALIZAR    -->
-        
-                        <h2>editar</h2>
-                    <form action="/update/<%= itens.id %>" method="post"><!-- manda PARA SER FEITO A ATUALIZAÇÃO    -->
+                    <% } else { %>
+                   
+                        <h2 class="editar">Informações do Convite</h2>
+                    <form action="/update/<%= itens.id %>" method="post">
                       
         
                         <label for="nome"> Nome:</label><!--    -->
-                        <input type="text" id="nome" name="nome" value="<%= itens.nome %>"><!--  o value envia os valores do pokemon  -->
+                        <input type="text" id="nome" name="nome" value="<%= itens.nome %>">
         
                         <label for="descricao"> Descrição:</label><!--    -->
                         <input type="text" id="descricao" name="descricao" value="<%= itens.descricao %> " >
@@ -83,7 +83,7 @@
                         <label for="imagem"> Link da Imagem:</label>
                         <input type="text" id="imagem" name="imagem" value="<%= itens.imagem %> "><!--    -->
         
-                        <button id="btnAtualizar" type="submit"> editar</button><!--  quando apertar em atualizar manda apara a pagina UPDATE  -->
+                        <button id="btnAtualizar" type="submit"> editar</button>
                       
                         
         
@@ -101,27 +101,27 @@
         <section id="lista">
                  <h2>Lista de Convites</h2>
 
-            <% convites.forEach((itens) => { %> <!-- aqui esta chamando o array POKEDEX que foi criado atraves do FOREACH o >>>POKEMON são itens<<-->
+            <% convites.forEach((itens) => { %> 
 
-               <div class="card"> <!--dentro dessa DIV mostra todos os objetos do ARRAY POKEDEX -->
+               <div class="card"> 
                 <p><h3> <%= itens.nome %> </h3> </p>
                  <a><img src="<%= itens.imagem%>" alt=""> </a> 
                
 
                
 
-                    <!-- envia o ID (identidade )para ser editado no botão editar-->
+                    
                    <a id="apagar" href="/delete/<%= itens.id %>"> Deletar</a>
                    <a id="editar" href="/detalhes/<%= itens.id %>">Informações</a>
                </div>
        
-              <%})  %> <!-- FECHOU O ARRAY POKEDEX -->
+              <%})  %> 
         </section>
        
         
      </main>
 
-     <footer>
+     <footer class="barra">
          <p>Todos os direitos preservados  &copy; Meu: <a target="_blank" href="https://www.linkedin.com/in/robervan-souza/">LinkedIn</a></p>
          <p>Meu: <a target="_blank" href="https://github.com/RobervanSouza"> Github</a></p>
      </footer>

@@ -12,11 +12,23 @@
 
 }
 
+body{
+    background-image: url(../img/papel-de-parede-adesivado-abstrato-fundo-branco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
+nav.nav {
 
+    background-image: url(../img/fundo-fotografico-em-tecido-textura-cinza-2-20x1-50-decoracao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 nav {
     width: 100%;
-    background-color: #d30a40;
+
     position: fixed; /* fica com a posição fixa*/
     z-index: 99; /* fica acima de tudo*/
     justify-content: space-between;
@@ -84,7 +96,8 @@ section#lista div.card{ /* para chamar ID usa (#) para chamar class usa(.)*/
 section#lista h2{   /*   */ 
     width: 100%;   /*   */
     text-align: center;/*   */
-    margin: 3rem;
+    margin: 8rem;
+    color: #d30a40;
 
 }
 
@@ -170,12 +183,13 @@ section#cadastro img.imagen {
 
 section#cadastro h2{
 
+    flex-wrap: wrap;
+    margin-top: 5rem;
      width: 100%;
      text-align: center;
      padding-bottom: 5rem;
      color: blue;
 }
-
 section#cadastro  form {
      width: 100%;
 }
@@ -187,8 +201,8 @@ section#cadastro  form input{
     outline: none;
     border: solid 2px green;
     margin: 0 1rem 1rem 1rem;
-    border-radius: 0 3rem 0 3rem;
-    text-align: margin 3rem;
+    border-radius: 0;
+    
 }
 
 section#cadastro form label{
@@ -221,11 +235,16 @@ section#cadastro  form button:hover{
 }
 
 
-footer{
-    background-color: #d30a40;
+section#cadastro h2.editar{
+    padding-bottom: 5rem;
+}
+
+footer.barra {
+    
     padding: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgb(23, 29, 31);
     
 }
 footer p {
@@ -271,6 +290,8 @@ span#close {
     color: rgb(7, 110, 38);
     transform: scale(1.5);
   }
+
+
  @media screen and ( max-width: 550px){
      section, aside {
         width: 100%;
@@ -284,3 +305,4 @@ span#close {
         width: 100%;
     }
 }
+
